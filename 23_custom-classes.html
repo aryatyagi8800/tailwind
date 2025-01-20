@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet" />
+</head>
+<body class="h-screen">
+    <h3>Custom classes create in input.css file</h3>
+    <pre>@layer components{
+        .btn{
+            @apply bg-blue-500 text-white rounded-md font-bold p-3 m-4 hover:bg-slate-500 transition duration-1000
+        }
+    }</pre>
+    <button class="bg-blue-500 text-white rounded-md font-bold p-3 m-4 hover:bg-slate-500 transition duration-1000">Submit</button>
+    <button class="btn-main">Click</button>
+</body>
+</html>

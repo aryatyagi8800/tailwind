@@ -1,3 +1,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    /* h1{
+        font-size: 60px;
+    } */
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 10px;
+    }
+}
+@layer base{
+    h1{
+        @apply text-8xl;
+    }
+}
+@layer components{
+    .btn-main{
+        @apply bg-blue-500 text-white rounded-md font-bold p-3 m-4 hover:bg-slate-500 transition duration-1000
+    }
+}
+@layer components{
+    .btn{
+        @apply font-bold px-5 py-2 border border-slate-400 rounded
+    }
+    .btn-primary{
+        @apply bg-blue-600 text-white border-blue-500 hover:bg-blue-700
+    }
+    .btn-secondary{
+        @apply bg-slate-500 text-white border border-slate-700 hover:bg-slate-700
+    }
+    .btn-success{
+        @apply bg-green-600 text-white border border-green-700 hover:bg-green-900
+    }
+    .btn-danger{
+        @apply bg-red-600 text-white border border-red-700 hover:bg-red-800
+    }
+    .btn-warning{
+        @apply bg-yellow-600 text-white border border-yellow-600 hover:bg-yellow-700
+    }
+    .btn-info{
+        @apply bg-cyan-400 text-white border border-cyan-500 hover:bg-cyan-600
+    }
+    .btn-basic{
+        @apply text-black border border-slate-500 hover:bg-slate-200
+    }
+    .btn-dark{
+        @apply bg-black text-white border border-slate-950 hover:bg-black
+    }
+}
